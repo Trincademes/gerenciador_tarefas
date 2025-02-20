@@ -4,9 +4,10 @@ from datetime import datetime, timedelta
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask_mail import Mail, Message
 from enviar_email import configurar_mail, enviar_email  # Importa as funções de enviar e-mail
+import os
 
 # Inicializando o Flask e o banco de dados
-app = Flask(__name__)
+app = Flask(__name__, template_folder=os.getcwd())  # Faz o Flask procurar os templates na raiz
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tarefas.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
