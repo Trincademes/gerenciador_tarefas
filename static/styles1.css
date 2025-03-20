@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    background-color: #fafafa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #36185e;
+    background-color: #fff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    background-color: #36185e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #290d43;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #b3b3b3;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
